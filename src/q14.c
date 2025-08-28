@@ -5,7 +5,7 @@ int main() {
     scanf("%d", &x);
     printf("Enter value for y: ");
     scanf("%d", &y);
-    printf("Before swap: x = %d, y = %d\n", x, y);
+    printf("B4 swap: x = %d, y = %d\n", x, y);
     x = x + y;
     y = x - y;
     x = x - y;

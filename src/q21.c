@@ -3,7 +3,7 @@ int main() {
     int x, y, z, temp;
     printf("Enter three numbers (x y z): ");
     scanf("%d %d %d", &x, &y, &z);
-    printf("Before swap: x=%d, y=%d, z=%d\n", x, y, z);
+    printf("B4 swap: x=%d, y=%d, z=%d\n", x, y, z);
     temp = x;
     x = y;
     y = z;

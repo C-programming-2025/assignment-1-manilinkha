@@ -2,10 +2,12 @@
 #include <math.h>
 int main()
 {
-    int num, checker;
-    printf("enter a number: ");
+    int num, sq, res, checker;
+    printf("enter any number: ");
     scanf("%d", &num);
-    checker = (int)(sqrt(num)) % 2 == 0;
+    sq = sqrt(num);
+    res = pow(sq, 2);
+    checker = res == num;
     printf("result: %d", checker);
     return 0;
 }
