@@ -1,9 +1,10 @@
 #include <stdio.h>
-int main() {
-    int x;
+int main()
+{
+    int x, Answer;
     printf("Enter a number: ");
     scanf("%d", &x);
-    x = ((x += 2) * 3) - 10;
-    printf("Result after increment by 2, multiply by 3, and subtract 10: %d\n", x);
+    Answer = ++x * 3 - 10;
+    printf("the result is: %d", Answer);
     return 0;
 }

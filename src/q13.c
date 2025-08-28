@@ -1,8 +1,10 @@
 #include <stdio.h>
-int main() {
-    int a;
-    printf("Enter any number:");
+int main()
+{
+    int a, result;
+    printf("enter a number: ");
     scanf("%d", &a);
-    printf("%d is%s divisible by 2 and 3.\n", a, a % 2 == 0 && a % 3 == 0 ? "" : " not");
+    result = a / 2 * 2 == a && a / 3 * 3 == a;
+    printf("the result is: %d", result);
     return 0;
 }
