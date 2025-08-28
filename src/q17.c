@@ -1,11 +1,12 @@
+
 #include <stdio.h>
-int isUpperCase(char c) {
-    return (c >= 'A' && c <= 'Z');
-}
-int main() {
-    char input;
-    printf("Enter a character: ");
-    scanf("%c", &input);
-    printf("%c %s an uppercase letter.\n", input, isUpperCase(input) ? "is" : "is not");
+int main()
+{
+    char a;
+    int checker;
+    printf("enter a character: ");
+    scanf("%c", &a);
+    checker = a >= 'A' && a <= 'Z';
+    printf("result: %d", checker);
     return 0;
 }
