@@ -1,13 +1,10 @@
 #include <stdio.h>
-int main() {
-    float num1, num2, num3, sum;
-    printf("Enter first number: ");
-    scanf("%f", &num1);
-    printf("Enter second number: ");
-    scanf("%f", &num2);
-    printf("Enter third number: ");
-    scanf("%f", &num3);
-    (num1 == num2 || num2 == num3 || num1 == num3);
-    printf("Sum of squares: %.2f\n", (num1*num1) + (num2*num2) + (num3*num3));
+int main()
+{
+    int a, b, c, sum;
+    printf("enter three numbers: ");
+    scanf("%d %d %d", &a, &b, &c);
+    sum = (a * a) + (b * b) + (c * c);
+    printf("the sum is: %d", sum);
     return 0;
 }

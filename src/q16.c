@@ -1,11 +1,11 @@
 #include <stdio.h>
-int main() {
-    float x, y;
-    printf("Enter value for x: ");
-    scanf("%f", &x);
-    printf("Enter value for y: ");
-    scanf("%f", &y);
-    float average = (x + y) / 2.0;
-    printf("The average of %.2f and %.2f is %.2f\n", x, y, average);
+int main()
+{
+    char a;
+    int checker;
+    printf("enter a character: ");
+    scanf("%c", &a);
+    checker = a >= 'A' && a <= 'Z';
+    printf("result: %d", checker);
     return 0;
 }

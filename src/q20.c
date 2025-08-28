@@ -1,11 +1,10 @@
 #include <stdio.h>
-int main() {
-    int num;
-    printf("Enter a number: ");
+int main()
+{
+    int num, checker;
+    printf("enter a number ");
     scanf("%d", &num);
-
-    int is_Multiple = ((num / 3) * 3 == num) | ((num / 5) * 5 == num);
-    printf("%d %s\n", num, is_Multiple ? "is a multiple of 3 or 5." : "is not a multiple.");
-
+    checker = num / 3 * 3 == num || num / 5 * 5 == num;
+    printf("the result is: %d", checker);
     return 0;
 }
